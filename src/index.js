@@ -2,8 +2,8 @@ import analyzer from "./analyzer.js";
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 //boton para limpiar la metrica
-const textarea = document.querySelector('textarea[name="user-input"]');
 const button = document.getElementById("reset");
+const userinput = document.querySelector('textarea[name="user-input"]');
 
 //constantes conectadas con HTML (cajitas)
 const númerodepalabras = document.querySelector(
@@ -22,11 +22,11 @@ const Sumanúmeros = document.querySelector(
 const Promediolongitud = document.querySelector(
   '[data-testid="longitud media de palabras"]'
 );
-const userinput = document.querySelector('textarea[name="user-input"]');
+
 
 //boton para limpiar la metrica
 button.addEventListener("click", function () {
-  textarea.value = "";
+  userinput.value = "";
   númerodepalabras.textContent = "Número de palabras: ";
   Caracteres.textContent = "Caracteres: ";
   Caracteressinespacios.textContent = "Recuento de caracteres sin espacios: ";
