@@ -1,19 +1,21 @@
-header {
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, footer {
   text-align: center;
 }
-footer {
-  text-align: center;
-}
-#reset {
-  background-color: aquamarine;
-  display: block;
-  margin: 0 auto;
-  margin-top: px;
+
+#recuadros-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .cuadro {
   background-color: rgb(6, 122, 122);
-  display: inline-block;
   color: azure;
   width: 100px;
   height: 50px;
@@ -22,10 +24,17 @@ footer {
   border: 5px solid black;
 }
 
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+li {
+  display: inline; /* Hace que los elementos de la lista se muestren en línea */
+}
 textarea[name="user-input"] {
-  display: block;
-  margin: 0 auto;
-  margin-top: 90px;
+  display: flex;
+  margin: 20px auto; /* Ajusta el margen superior e inferior */
   background-color: rgb(224, 240, 240);
   width: 800px;
   height: 200px;
