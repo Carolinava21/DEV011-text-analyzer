@@ -1,3 +1,6 @@
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 main {
   display: flex;
   flex-direction: column;
@@ -15,6 +18,8 @@ header, footer {
 }
 
 .cuadro {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
   background-color: rgb(6, 122, 122);
   color: azure;
   width: 100px;
@@ -41,8 +46,13 @@ textarea[name="user-input"] {
 }
 
 #reset {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
   background-color: rgb(6, 122, 122);
   color: azure;
   width: 100px;
   height: 50px;
+}
+footer{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
