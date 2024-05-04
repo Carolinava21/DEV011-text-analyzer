@@ -32,7 +32,7 @@ button.addEventListener("click", function () {
   Caracteressinespacios.textContent = "Caracteres sin espacios: ";
   Números.textContent = "Números: ";
   Sumanúmeros.textContent = "Suma Números: ";
-  Promediolongitud.textContent = "Longitud de palabras: ";
+  Promediolongitud.textContent = "Promedio Longitud : ";
 });
 
 //número de Palabras// función con HTML
@@ -59,7 +59,7 @@ userinput.addEventListener("keyup", () => {
 userinput.addEventListener("keyup", () => {
   const text = userinput.value;
   const iCountC = analyzer.getAverageWordLength(text);
-  Promediolongitud.textContent = "Longitud de palabras: " + iCountC;
+  Promediolongitud.textContent = "Promedio Longitud : " + iCountC;
 });
 //números
 userinput.addEventListener("keyup", () => {
